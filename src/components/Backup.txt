@@ -33,12 +33,12 @@ function startQuiz() {
   quizStarted.value = true;
 }
 
-function reiniciar() {
-  currentIndex.value = 0;
-  score.value = 0;
-  quizStarted.value = false;
-  currentQuestion.value = questions[0];
-  situacao.value = false;
+function reiniciar(){
+   currentIndex = ref(0);
+   score = ref(0);
+   quizStarted = ref(false);
+   currentQuestion = ref(questions[0]);
+   situacao = ref(false);
 }
 
 function checkAnswer(selectedOption) {
